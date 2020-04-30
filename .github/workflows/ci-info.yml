@@ -1,4 +1,4 @@
-on: [issues, pull_request]
+on: [status]
 
 jobs:
   ci_info_job:
