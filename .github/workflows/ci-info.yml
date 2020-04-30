@@ -1,15 +1,12 @@
-on: [issues]
+on: [issues, pull_request]
 
 jobs:
   ci_info_job:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: Populate CI info
     steps:
-    - name: Hello world action step
-      id: hello
+    - name: CI info step
+      id: ci-info
       uses: LLNL/radiuss-ci-info-action@master
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        who-to-greet: 'Mona the Octocat'
-    - name: Get the output time
-      run: echo "The time was ${{ steps.hello.outputs.time }}"
