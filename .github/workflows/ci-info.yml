@@ -1,4 +1,7 @@
-on: [status]
+on: 
+  issue_comment:
+      types: [created]
+  status:
 
 jobs:
   ci_info_job:
