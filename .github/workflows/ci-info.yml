@@ -1,4 +1,4 @@
-on: [issue_comment]
+on: [issues]
 
 jobs:
   ci_info_job:
