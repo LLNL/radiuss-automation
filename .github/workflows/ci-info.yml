@@ -12,4 +12,5 @@ jobs:
       id: ci-info
       uses: LLNL/radiuss-ci-info-action@master
       with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        repoToken: ${{ secrets.GITHUB_TOKEN }}
+        eventName: ${{ github.event_name }}
