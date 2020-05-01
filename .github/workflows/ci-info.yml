@@ -2,7 +2,7 @@ on:
   issue_comment:
       types: [created]
   status:
-  commit:
+  push:
 
 jobs:
   ci_info_job:
