@@ -1,7 +1,8 @@
-on: 
+on:
   issue_comment:
       types: [created]
   status:
+  commit:
 
 jobs:
   ci_info_job:
